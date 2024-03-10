@@ -10,7 +10,7 @@ if [ ! -w "$INSTALL_DIR" ]; then
 fi
 
 # Copy the script to the installation directory
-cp fuckthis.sh "$INSTALL_DIR"
+cp fuckthis "$INSTALL_DIR"
 
 # Change permissions to make the script executable
 chmod +x "$INSTALL_DIR/fuckthis.sh"
