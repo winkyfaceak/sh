@@ -14,6 +14,6 @@ fi
 cp fuckthis "$INSTALL_DIR"
 
 # Change permissions to make the script executable
-chmod +x "$INSTALL_DIR/fuckthis.sh"
+chmod +x "$INSTALL_DIR/fuckthis"
 
 echo "Installation complete. Enjoy the wacky scripts!"
