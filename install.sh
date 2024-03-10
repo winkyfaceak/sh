@@ -6,6 +6,7 @@ INSTALL_DIR="/usr/local/bin"
 # Ensure the directory exists and is writable
 if [ ! -w "$INSTALL_DIR" ]; then
     echo "Error: $INSTALL_DIR is not writable. Installation failed."
+    echo "Try again with sudo."
     exit 1
 fi
 
