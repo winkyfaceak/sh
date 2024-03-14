@@ -1,14 +1,15 @@
 #!/bin/sh
 case "$1" in
-    *-i*)
-        vim ~/.config/flake/modules/apps.nix
-        ;;
+*-i*)
+	nix run github:isabelroses/nvim ~/.config/flake/modules/apps.nix
+	;;
 
-    *-r*)
-        nix run nix-darwin -- switch --flake ~/.config/flake
-        ;;
-    
-    *)
-        echo "nt"
-        exit 1
+*-r*)
+	nix run nix-darwin -- switch --flake ~/.config/flake
+	;;
+
+*)
+	echo "nt"
+	exit 1
+	;;
 esac
