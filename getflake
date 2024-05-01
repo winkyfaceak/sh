@@ -1,9 +1,8 @@
 #!/bin/sh
 case "$1" in
 *-i*)
-	nix run github:isabelroses/nvim ~/.config/flake/modules/apps.nix
+	nix run github:isabelroses/nvim ~/.config/flake/modules/homeberw.nix
 	;;
-
 *-r*)
 	nix run nix-darwin -- switch --flake ~/.config/flake
 	;;
